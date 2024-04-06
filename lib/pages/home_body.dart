@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'custom_appBar.dart';
 
 class HomeBody extends StatefulWidget {
   const HomeBody({super.key});
@@ -12,30 +13,17 @@ class _HomeBodyState extends State<HomeBody> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Builder(
-                    builder: (context) => IconButton(
-                      icon: Icon(Icons.dashboard),
-                      onPressed: () {
-                        Scaffold.of(context).openDrawer();
-                      },
-                    ),
-                  ),
-                ),
-                Column(
-                  children: [],
-                )
-              ],
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              CustomAppBar(),
+              SizedBox(
+                height: 20,
+              ),
+              SearchBar(),
+            ],
+          ),
         ),
       ),
       drawer: Drawer(),
