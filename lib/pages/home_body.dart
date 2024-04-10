@@ -23,6 +23,10 @@ class _HomeBodyState extends State<HomeBody> {
                 height: 20,
               ),
               SearchSection(),
+              SizedBox(
+                height: 20,
+              ),
+              
             ],
           ),
         ),
