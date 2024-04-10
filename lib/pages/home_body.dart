@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_online_shop/pages/search_section.dart';
 import 'custom_appBar.dart';
 
 class HomeBody extends StatefulWidget {
@@ -21,7 +22,7 @@ class _HomeBodyState extends State<HomeBody> {
               SizedBox(
                 height: 20,
               ),
-              SearchBar(),
+              SearchSection(),
             ],
           ),
         ),
