@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_online_shop/pages/search_section.dart';
+import 'package:flutter_online_shop/pages/slider/slider.dart';
 import 'custom_appBar.dart';
 
 class HomeBody extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomeBodyState extends State<HomeBody> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
+          child: ListView(
             children: [
               CustomAppBar(),
               SizedBox(
@@ -26,7 +27,7 @@ class _HomeBodyState extends State<HomeBody> {
               SizedBox(
                 height: 20,
               ),
-              
+              ProductSlider(),
             ],
           ),
         ),
