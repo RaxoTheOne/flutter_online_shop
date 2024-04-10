@@ -1,17 +1,18 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class ProductSlider extends StatefulWidget {
-  const ProductSlider({super.key});
+class ProductSLider extends StatefulWidget {
+  const ProductSLider({super.key});
 
   @override
-  _ProductSliderState createState() => _ProductSliderState();
+  _ProductSLiderState createState() => _ProductSLiderState();
 }
 
-class _ProductSliderState extends State<ProductSlider> {
+class _ProductSLiderState extends State<ProductSLider> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 200,
       child: CarouselSlider(
         options: CarouselOptions(
           aspectRatio: 2.0,
