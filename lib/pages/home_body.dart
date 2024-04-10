@@ -27,7 +27,7 @@ class _HomeBodyState extends State<HomeBody> {
               SizedBox(
                 height: 20,
               ),
-              ProductSLider(),
+              ProductSlider(),
             ],
           ),
         ),
