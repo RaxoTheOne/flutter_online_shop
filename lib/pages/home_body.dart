@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_online_shop/category/category.dart';
 import 'package:flutter_online_shop/pages/search_section.dart';
 import 'package:flutter_online_shop/pages/slider/slider.dart';
 import 'custom_appBar.dart';
@@ -28,6 +29,10 @@ class _HomeBodyState extends State<HomeBody> {
                 height: 20,
               ),
               ProductSlider(),
+              SizedBox(
+                height: 20,
+              ),
+              Category(),
             ],
           ),
         ),
