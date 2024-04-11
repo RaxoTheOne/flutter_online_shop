@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_online_shop/constants.dart';
 
 class Category extends StatefulWidget {
   const Category({super.key});
@@ -24,8 +25,8 @@ class _CategoryState extends State<Category> {
             width: 20,
           ),
           CategoryProducts(
-            image: 'assets/images/Nerv Nicht Geh in die Wüste-Tasse.jpg',
-            text: 'Tassen',
+            image: 'assets/images/Ich bin wach! Mehr könnt ihr heute nicht verlangen-Tasche.jpg',
+            text: 'Taschen',
             press: () {},
           ),
           SizedBox(
@@ -33,7 +34,7 @@ class _CategoryState extends State<Category> {
           ),
           CategoryProducts(
             image: 'assets/images/Nerv Nicht Geh in die Wüste-Tasse.jpg',
-            text: 'Tassen',
+            text: 'Kissen',
             press: () {},
           ),
           SizedBox(
@@ -41,7 +42,7 @@ class _CategoryState extends State<Category> {
           ),
           CategoryProducts(
             image: 'assets/images/Nerv Nicht Geh in die Wüste-Tasse.jpg',
-            text: 'Tassen',
+            text: 'Schlüsselanhänger',
             press: () {},
           ),
         ],
@@ -68,16 +69,17 @@ class CategoryProducts extends StatelessWidget {
         onTap: () {},
         child: Container(
           child: Chip(
+            backgroundColor: kPrimaryColor,
               label: Row(
             children: [
-              Text(text),
-              SizedBox(
-                width: 20,
-              ),
               Image.asset(
                 image,
                 height: 40,
               ),
+              SizedBox(
+                width: 20,
+              ),
+              Text(text),
             ],
           )),
         ),

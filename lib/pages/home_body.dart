@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_online_shop/category/category.dart';
 import 'package:flutter_online_shop/pages/search_section.dart';
 import 'package:flutter_online_shop/pages/slider/slider.dart';
+import 'package:flutter_online_shop/products/recent_products.dart';
 import 'custom_appBar.dart';
 
 class HomeBody extends StatefulWidget {
@@ -33,6 +34,13 @@ class _HomeBodyState extends State<HomeBody> {
                 height: 20,
               ),
               Category(),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 300,
+                child: RecentProducts()
+                ),
             ],
           ),
         ),
