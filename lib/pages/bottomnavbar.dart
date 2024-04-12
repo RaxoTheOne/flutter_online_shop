@@ -17,7 +17,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color inactiveColor = Colors.grey;
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10),
+      padding: EdgeInsets.symmetric(vertical: 0),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
@@ -27,7 +27,7 @@ class BottomNavBar extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: Color(0xFFDADADA),
-              offset: Offset(0, -15),
+              offset: Offset(0, -10),
               blurRadius: 20,
             ),
           ]),

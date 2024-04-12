@@ -16,6 +16,7 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
       appBar: AppBar(
         title: Text('FavouriteScreen'),
       ),
+      body: Placeholder(),
       bottomNavigationBar: BottomNavBar(
         selectedMenu: MenuState.favourite,
       ),
