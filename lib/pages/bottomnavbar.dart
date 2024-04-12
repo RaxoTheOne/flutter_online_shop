@@ -8,7 +8,8 @@ import 'package:flutter_online_shop/pages/main_pages/user.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
-    super.key, required this.selectedMenu,
+    super.key,
+    required this.selectedMenu,
   });
   final MenuState selectedMenu;
 
@@ -36,7 +37,8 @@ class BottomNavBar extends StatelessWidget {
         children: [
           IconButton(
             icon: Icon(Icons.home_outlined),
-            color: MenuState.home == selectedMenu ? kPrimaryColor : inactiveColor,
+            color:
+                MenuState.home == selectedMenu ? kPrimaryColor : inactiveColor,
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (Context) => HomeScreen()));
@@ -44,7 +46,9 @@ class BottomNavBar extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(Icons.favorite_border_outlined),
-            color: MenuState.favourite == selectedMenu ? kPrimaryColor : inactiveColor,
+            color: MenuState.favourite == selectedMenu
+                ? kPrimaryColor
+                : inactiveColor,
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (Context) => FavouriteScreen()));
@@ -52,15 +56,21 @@ class BottomNavBar extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(Icons.shopping_cart_outlined),
-            color: MenuState.shoppincart == selectedMenu ? kPrimaryColor : inactiveColor,
+            color: MenuState.shoppincart == selectedMenu
+                ? kPrimaryColor
+                : inactiveColor,
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (Context) => ShoppingCartScreen()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (Context) => ShoppingCartScreen()));
             },
           ),
           IconButton(
             icon: Icon(Icons.person_outlined),
-            color: MenuState.profile == selectedMenu ? kPrimaryColor : inactiveColor,
+            color: MenuState.profile == selectedMenu
+                ? kPrimaryColor
+                : inactiveColor,
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (Context) => UserProfileScreen()));
