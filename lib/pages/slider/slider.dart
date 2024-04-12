@@ -39,7 +39,7 @@ class _ProductSliderState extends State<ProductSlider> {
               .map((item) => ClipRRect(
                     borderRadius: BorderRadius.circular(40),
                     child: Center(
-                      child: Image.asset(item, fit: BoxFit.cover, width: 1000),
+                      child: Image.asset(item, fit: BoxFit.cover, width: 800),
                     ),
                   ))
               .toList(),
