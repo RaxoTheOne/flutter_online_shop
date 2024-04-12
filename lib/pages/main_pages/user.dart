@@ -14,7 +14,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FavouriteScreen'),
+        title: Text('ProfileScreen'),
       ),
       bottomNavigationBar: BottomNavBar(
         selectedMenu: MenuState.profile,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_online_shop/constants.dart';
 import 'pages/home_screen.dart';
 
 void main() {
@@ -17,8 +18,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        appBarTheme: AppBarTheme(
+          color: kPrimaryColor,
+        ),
       ),
-
       home: const HomeScreen(),
     );
   }
