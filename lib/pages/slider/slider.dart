@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_online_shop/constants.dart'; // Stellen Sie sicher, dass Sie constants.dart importiert haben
+import 'package:flutter_online_shop/constants.dart';
 
 class ProductSlider extends StatefulWidget {
   const ProductSlider({super.key});

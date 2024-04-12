@@ -39,8 +39,8 @@ class _HomeBodyState extends State<HomeBody> {
               ),
               Container(
                 height: 300,
-                child: RecentProducts()
-                ),
+                child: RecentProducts(),
+              ),
             ],
           ),
         ),
