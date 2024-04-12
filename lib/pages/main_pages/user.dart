@@ -16,6 +16,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       appBar: AppBar(
         title: Text('ProfileScreen'),
       ),
+      body: Placeholder(),
       bottomNavigationBar: BottomNavBar(
         selectedMenu: MenuState.profile,
       ),

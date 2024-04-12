@@ -16,6 +16,7 @@ class _ShoppingCartScreenState extends State<ShoppingCartScreen> {
       appBar: AppBar(
         title: Text('ShoppingCartScreen'),
       ),
+      body: Placeholder(),
       bottomNavigationBar: BottomNavBar(
         selectedMenu: MenuState.shoppincart,
       ),
