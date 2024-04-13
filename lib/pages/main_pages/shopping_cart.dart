@@ -14,7 +14,7 @@ class _ShoppingCartScreenState extends State<ShoppingCartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ShoppingCartScreen'),
+        title: Text('WarenkorbScreen'),
       ),
       body: Placeholder(),
       bottomNavigationBar: BottomNavBar(
